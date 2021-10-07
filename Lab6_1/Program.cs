@@ -10,6 +10,7 @@ namespace Lab6_1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Введите предложение:");
             string startString = Console.ReadLine();
             string[] stringArray = startString.Split();
             string longWord = "";
