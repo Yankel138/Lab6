@@ -19,7 +19,7 @@ namespace Lab6_3
 
             while (text.Length > 0)
             {
-                if ((text.IndexOf(braceStart) > 0) && (text.IndexOf(braceEnd) > 0))
+                if ((text.IndexOf(braceStart) >= 0) && (text.IndexOf(braceEnd) >= 0))
                 {
                     result += text.Substring(0, text.IndexOf(braceStart));
                     text = text.Remove(0, text.IndexOf(braceEnd) + 1);

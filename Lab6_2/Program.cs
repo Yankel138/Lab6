@@ -13,13 +13,12 @@ namespace Lab6_2
             Console.WriteLine("Введите предложение:");
             string text = Console.ReadLine();
             char space = ' ';
-            bool poly = true;
+            bool paly = true;
             foreach (char s in text)
             {
                 int indSpace = text.IndexOf(space);
-                if (indSpace > 0)
+                if (indSpace >= 0)
                 {
-
                     text = text.Remove(indSpace,1);
                 }
             }
@@ -28,17 +27,17 @@ namespace Lab6_2
             {
                 if (text[i] != text[text.Length - i - 1])
                 {
-                    poly = false;
+                    paly = false;
                 } 
             } 
             {
-                if (poly)
+                if (paly)
                 {
-                    Console.WriteLine("Предложение является полиндромом");
+                    Console.WriteLine("Предложение является палиндромом");
                 }
                 else
                 {
-                    Console.WriteLine("Предложение не является полиндромом");
+                    Console.WriteLine("Предложение не является палиндромом");
                 }
             }
             Console.ReadKey();
